@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { MediaSection } from './components/MediaSection';
 import { Roster } from './components/Roster';
 import { Services } from './components/Services';
 import { SongUploads } from './components/SongUploads';
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Navbar />
       <main>
         <Hero />
+        <MediaSection />
         <Roster />
         <Services />
         <SongUploads />

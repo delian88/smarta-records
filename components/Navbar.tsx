@@ -14,6 +14,7 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
+    { name: 'Music', href: '#music' },
     { name: 'Artists', href: '#roster' },
     { name: 'Services', href: '#services' },
     { name: 'Uploads', href: '#uploads' },
@@ -43,8 +44,8 @@ export const Navbar: React.FC = () => {
             </a>
           </div>
           
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-10">
+          <div className="hidden lg:block">
+            <div className="ml-10 flex items-baseline space-x-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -58,7 +59,7 @@ export const Navbar: React.FC = () => {
             </div>
           </div>
 
-          <div className="md:hidden z-50">
+          <div className="lg:hidden z-50">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-full text-white hover:bg-white/10 transition-colors focus:outline-none"
