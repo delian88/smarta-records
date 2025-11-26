@@ -18,7 +18,7 @@ const artists = [
     genre: "R&B / Soul",
     // Set to local path. User should place their image as 'jahari.jpg' in public folder.
     image: "/jahari.jpg?v=2",
-    desc: "Soulful melodies that traverse the emotional landscape of modern life.",
+    desc: "Ireland melodies that traverse the emotional landscape of modern life.",
     link: "#"
   }
 ];
