@@ -13,7 +13,7 @@ const tracks = [
   {
     id: 2,
     title: "Global Frequency",
-    artist: "SMARTAMAN042 ft. Jahar",
+    artist: "SMARTAMAN042 ft. Jahari",
     duration: "4:12",
     cover: "https://picsum.photos/400/400?random=202"
   },
@@ -22,12 +22,12 @@ const tracks = [
     title: "Night Drive Phonk",
     artist: "SMARTAMAN042",
     duration: "2:58",
-    cover: "https://picsum.photos/400/400?random=203"
+    cover: "https://picsum.photos/400/400?random=20"
   },
   {
     id: 4,
     title: "The Come Up",
-    artist: "JAHAR",
+    artist: "JAHARI",
     duration: "3:30",
     cover: "https://picsum.photos/400/400?random=204"
   }

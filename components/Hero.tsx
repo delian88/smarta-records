@@ -48,9 +48,12 @@ export const Hero: React.FC = () => {
             
             <div className="hidden lg:block lg:col-span-4 relative">
                 <FadeIn delay={600} direction="left">
-                    <div className="relative w-full aspect-[3/4] border border-white/10 p-2">
+                    <div className="relative w-full aspect-[3/4] border border-white/10 p-2 group">
                         <img 
-                            src="https://picsum.photos/800/1200?random=10" 
+                            src="/smartaman.jpg" 
+                            onError={(e) => {
+                                e.currentTarget.src = "https://picsum.photos/800/1200?random=10";
+                            }}
                             alt="Featured Artist" 
                             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                         />

@@ -13,27 +13,11 @@ const artists = [
     link: "https://smartaman042.com"
   },
   {
-    name: "JAHAR",
+    name: "JAHARI",
     role: "Artist",
     genre: "R&B / Soul",
     image: "https://picsum.photos/800/1200?random=102",
     desc: "Soulful melodies that traverse the emotional landscape of modern life.",
-    link: "#"
-  },
-  {
-    name: "K-NINE",
-    role: "Artist",
-    genre: "Trap / Drill",
-    image: "https://picsum.photos/800/1200?random=103",
-    desc: "Hard-hitting lyricism bringing the raw energy of the streets to the main stage.",
-    link: "#"
-  },
-  {
-    name: "VELVET RAY",
-    role: "Artist",
-    genre: "Alternative Pop",
-    image: "https://picsum.photos/800/1200?random=104",
-    desc: "Genre-bending sounds that defy convention and redefine pop music.",
     link: "#"
   }
 ];
@@ -60,9 +44,9 @@ export const Roster: React.FC = () => {
                 </FadeIn>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 {artists.map((artist, idx) => (
-                    <FadeIn key={idx} delay={idx * 150} className="group relative aspect-[3/4] overflow-hidden bg-gray-900 cursor-pointer">
+                    <FadeIn key={idx} delay={idx * 150} className="group relative aspect-[3/4] overflow-hidden bg-gray-900 cursor-pointer border border-white/10 hover:border-smarta-accent transition-colors duration-500">
                         <img 
                             src={artist.image} 
                             alt={artist.name} 
@@ -77,21 +61,21 @@ export const Roster: React.FC = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90 transition-opacity duration-300"></div>
 
                         {/* Content */}
-                        <div className="absolute inset-0 p-6 flex flex-col justify-between">
+                        <div className="absolute inset-0 p-8 flex flex-col justify-between">
                             <div className="flex justify-end opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-4 group-hover:translate-x-0">
-                                <a href={artist.link} className="p-2 bg-white text-black rounded-full hover:bg-smarta-accent hover:text-white transition-colors">
-                                    <ArrowUpRight className="w-5 h-5" />
+                                <a href={artist.link} className="p-3 bg-white text-black rounded-full hover:bg-smarta-accent hover:text-white transition-colors shadow-lg">
+                                    <ArrowUpRight className="w-6 h-6" />
                                 </a>
                             </div>
 
                             <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                <span className="inline-block px-2 py-1 bg-smarta-accent text-white text-[10px] font-bold uppercase tracking-wider mb-2">
+                                <span className="inline-block px-3 py-1 bg-smarta-accent text-white text-[10px] font-bold uppercase tracking-wider mb-3">
                                     {artist.genre}
                                 </span>
-                                <h3 className="text-2xl font-display font-bold text-white uppercase tracking-tighter mb-1 leading-none">
+                                <h3 className="text-4xl font-display font-bold text-white uppercase tracking-tighter mb-2 leading-none">
                                     {artist.name}
                                 </h3>
-                                <p className="text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-2">
+                                <p className="text-base text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-3">
                                     {artist.desc}
                                 </p>
                             </div>
