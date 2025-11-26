@@ -16,7 +16,8 @@ const artists = [
     name: "JAHARI",
     role: "Artist",
     genre: "R&B / Soul",
-    image: "https://picsum.photos/800/1200?random=102",
+    // Set to local path. User should place their image as 'jahari.jpg' in public folder.
+    image: "/jahari.jpg?v=2",
     desc: "Soulful melodies that traverse the emotional landscape of modern life.",
     link: "#"
   }
